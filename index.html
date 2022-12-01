@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>8-dars</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <header class="header">
+        <h1 class=" title fw-bold  text-center text-uppercase">Movies</h1>
+    </header>
+    
+    
+    <main>
+        
+        <!-- Form start -->
+        
+        <section>
+            <div class="container">
+                <form  class="form d-lg-flex mb-5">
+                    <input type="search" class="input-search form-control mb-4 mb-lg-0 me-lg-5" placeholder="Search you Films...">
+                    <select class="form-select select-categories mb-4 mb-lg-0 me-lg-5 " aria-label="Default select example">
+                        <option selected value="all">All</option>
+                    </select>
+                    <select class="form-select select-sort mb-4 mb-lg-0 me-lg-5" aria-label="Default select example">
+                        <option selected hidden>All Sort</option>
+                        <option value="a-z">A-Z</option>
+                        <option value="z-a">Z-A</option>
+                        <option value="old-new">Old-New</option>
+                        <option value="new-old">New-Old</option>
+                      </select>
+                    <button class="btn-js px-5">Submit</button>
+                </form>
+            </div>
+        </section>
+        
+        <!-- Form end -->
+        
+        
+        <section class="films">
+            <div class="container">
+                <ul class="list">
+                    
+                </ul>
+            </div>
+        </section>
+    </main>
+    
+    
+    <!-- Modal start -->
+    
+    
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="d-flex justify-content-center align-items-center pt-4 mb-4">
+                    <img  class="films-img rounded-3 me-5 mb-4"  alt="films-img">
+                    <div>
+                        <h3 class="text-white fw-bold fs-1 text-uppercase">genres</h3>
+                        <p class="films-cat text-danger fw-bold"></p>
+                    </div>
+                </div>
+                <p class="films-overview text-white mb-4"></p>
+                <a class="films-link py-2">See film</a>
+            </div>
+        </div>
+    </div>
+    <!-- Modal end -->
+    
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/films.js"></script>
+    <script src="js/main.js"></script>
+    
+</body>
+</html>
